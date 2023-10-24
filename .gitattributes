@@ -1,7 +1,7 @@
-# Common settings that generally should always be used with your language specific settings
+# https://richienb.github.io/gitattributes-generator/
 
 # Auto detect text files and perform LF normalization
-*          text=auto
+*          text=auto eol=lf
 
 #
 # The above will handle all files NOT found below
@@ -25,7 +25,7 @@
 *.adoc     text
 *.textile  text
 *.mustache text
-*.csv      text
+*.csv      text eol=crlf
 *.tab      text
 *.tsv      text
 *.txt      text

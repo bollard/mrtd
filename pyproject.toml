@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mrtd"
+version = "0.1.0"
+description = "Parse Machine Readable Travel Documents (MRTDs)"
+authors = ["bollard <358225+bollard@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.1"
+isort = "^5.12.0"
+
+[tool.poetry.scripts]
+check = "mrtd.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
